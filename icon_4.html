@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design</title>
- <style>
-        h3{
+    <style>
+        h3 {
             color: blue;
         }
-        body{
-            color: black;
-            background-color: rgb(118, 118, 170);
+
+        body {
+            color: white;
+            background-color: black;
         }
-        .bdy{
+
+        .bdy {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 100px;
             /* margin: 0; */
-            background-color:rgb(118, 118, 170);
-            color: black;
+            background-color: black;
+            color: white;
         }
-        .left{
+
+        .left {
             width: 50%;
             padding: 20px;
         }
-        .right{
+
+        .left p {
+            font-size: 15px;
+            font-family: cursive;
+        }
+
+        .right {
             width: 50%;
             display: flex;
             justify-content: center;
             /* align-items: center; */
         }
 
-        img{
+        img {
             width: 60%;
             height: auto;
-            
+
         }
-        button{
+
+        button {
             border-radius: 10px;
             padding: 4px;
-            background-color: rgb(179, 59, 159);
+            background-color: rgb(151, 102, 163);
             color: white;
         }
-        .damn{
+
+        .damn {
             color: white;
         }
     </style>
 </head>
 
 <body>
-      <li><a href="index.html" class="damn">Home</a></li>
+    <ul>
+        <li><a href="index.html" class="damn">Home</a></li>
         <li> <a href="table_1.html" class="damn">Table page</a></li>
         <li><a href="form_1.html" class="damn">Form page 1</a></li>
         <li><a href="form_2.html" class="damn">Form page 2</a></li>
@@ -59,23 +72,25 @@
         <li><a href="icon_2.html" class="damn">Icon page 2</a></li>
         <li><a href="icon_3.html" class="damn">Icon page 3</a></li>
         <li><a href="icon_4.html" class="damn">Icon page 4</a></li>
+        <li><a href="icon_5.html" class="damn">Icon page 5</a></li>
+        <li><a href="icon_6.html" class="damn">Icon page 5</a></li>
     </ul>
 
     <div class="bdy">
 
-    <div class="left">
-        <!-- <h3>DIGITAL MEDIAL AGENCY</h3> -->
-        <h1>Web Design & Development Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam cupiditate, ipsum quod dolorem veniam consequatur 
-            libero! Quod eveniet cupiditate quam.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consectetur.
-        </p>
-        <button>VOIR PLUS</button>
-    </div>
-    <div class="right">
-        <img src="premium.avif" alt="">
-    </div>
+        <div class="left">
+            <h1>Web Design & <br><span for="h1" style="color: rgb(97, 17, 97);">Development</span><br>Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam cupiditate, ipsum quod dolorem
+                veniam consequatur
+                libero! Quod eveniet cupiditate quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus consectetur.
+            </p>
+            <button>VOIR PLUS</button>
+        </div>
+        <div class="right">
+            <img src="premium.avif" alt="premium img">
+        </div>
     </div>
 </body>
 
 </html>
-    
