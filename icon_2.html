@@ -18,8 +18,7 @@
         }
 
         .container {
-            width: 900px;
-            display: flex;
+            width: 85%;
             margin: auto;
             background-color: rgba(255, 255, 255, 0.05);
             box-shadow: 0 0 20px rgba(0, 0, 0, 4);
@@ -31,19 +30,21 @@
             /* padding: 20px; */
         }
 
-        .brand i{
+        .brand i {
             padding: 15px;
         }
-        
-        
+
+
         .boxes {
             display: flex;
+            justify-content: space-around;
+            align-items: center;
             width: 100%;
         }
 
         .box {
             background-color: transparent;
-            padding: 43px;
+            padding: 3px;
             width: fit-content;
             color: white;
             margin-bottom: 50px;
@@ -51,16 +52,16 @@
 
 
 
-        .box h2 {
-            margin-top:190px;
+        .box h1 {
+            margin: 0;
             font-size: 36px;
 
         }
 
         .box p {
             font-size: 14px;
-            width: 100%;
-            padding: 10px;
+            padding: 10px 0;
+            margin: 0;
         }
 
         input[type="text"] {
@@ -73,11 +74,12 @@
         }
 
         .content-text button {
-            /* background-color: white; */
+            background-color: red;
+            color: white;
             border: none;
             padding: 20px;
             border-radius: 30px;
-            width: 70%;
+            width: 100%;
             padding: 10px;
             margin-right: 10px;
             cursor: pointer;
@@ -90,9 +92,6 @@
 
         }
 
-        .content-text p {
-            color: white;
-        }
 
         .content-text label {
             margin-top: 36px;
@@ -122,12 +121,40 @@
 
 
         .options {
-            color: white;
-            margin-top: 50px;
-            padding-bottom: 10px;
+            display: flex;
             justify-content: space-between;
-            /* text-align: center; */
+            align-items: center;
+            padding: 10px 0;
+            width: 100%;
+            /* color: white; */
+            /* margin-top: 50px; */
+            /* padding-bottom: 10px; */
+        }
 
+        .remember {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            /* width: 20; */
+        }
+
+        .my-input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            padding: 5px 0;
+            width: 100%;
+
+
+        }
+
+        .forgot {
+            display: block;
+        }
+
+        form {
+            width: 400px;
         }
 
         form a {
@@ -165,8 +192,8 @@
             <div class="boxes">
                 <div class="box">
 
-                    <h2>Welcome!</h2>
-                    <p>To Our New Website.</p>
+                    <h1>Welcome!</h1>
+                    <h4>To Our New Website.</h4>
                     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis? <br>Lorem ipsum dolor sit.</P>
                     <div class="social-icons">
                         <i class="bi bi-linkedin"></i>
@@ -181,19 +208,20 @@
 
                         <h2><b>SIGN IN</b></h2>
                         <label for="email">Email or Phone</label><BR></BR>
-                        <input type="email" name="email" id="email" required><br><br>
+                        <input class="my-input" type="email" name="email" id="email" required><br><br>
 
                         <label for="password">Password</label><BR></BR>
-                        <input type="password" name="password" id="password" required><br>
+                        <input class="my-input" type="password" name="password" id="password" required><br>
 
                         <div class="options">
-                            <input type="checkbox" name="remember me" id="remember me"><label for="remember me">Remember
-                                me</label>
-                            <a href="">Forgot Password?</a></label></b>
+                            <div class="remember">
+                                <p><input type="checkbox" name="rememberme" id="rememberme">Remember me</p>
+                            </div>
+                            <a class="forgot" href="">Forgot Password?</a>
                         </div>
                         <button><b>Sign In</b></button>
 
-                        <p>Not a member?<label for="sign up" class="brr"><a href="">Sign up</a></label></p>
+                        <p>Don't have an account?<label for="sign up" class="brr"><a href="">Sign up</a></label></p>
 
 
                     </form>
