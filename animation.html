@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            width: 20px;
+            height: 20px;
+            
+            /* background-color: purple; */
+        }
+        .box2 {
+            background-color: blue;
+            animation: movearound 3s linear 0s infinite;
+        }
+
+        @keyframes movearound {
+            0% {
+            
+                margin-left: 100px;
+                margin-top: 0px;
+            }
+            12.5%{
+                margin-left: 300px;
+                margin-top: 0;
+            }
+
+            25% {
+                margin-left: 360px;
+                margin-top: 40px;
+            }
+
+            37.5%{
+                margin-left: 350px;
+                margin-top: 80px;
+            }
+
+            50% {
+                margin-left: 300px;
+                margin-top: 120px;
+            }
+
+            62.5%{
+                margin-left: 190px;
+                margin-top: 120px;
+            }
+
+            75% {
+                margin-left: 80px;
+                margin-bottom: 100px;
+
+            }
+
+            87.5%{
+                margin-left: 70px;
+                margin-bottom: 100px;
+            }
+
+            100% {
+                margin-left: 100px;
+                margin-top:0px;
+            }
+        }
+
+        .box-container {
+            height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box-container">
+        <div class="box box2"></div>
+    </div>
+
+
+</body>
+
+</html>
