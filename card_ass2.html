@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card</title>
+    <title>Card</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <style>
+<style>
         .container {
             display: block;
             justify-content: center;
@@ -51,7 +50,9 @@
             margin-left: 20px;
             align-items: center;
         }
-
+        .extra{
+            background-color:rgb(177, 38, 84);
+        }
         .card-img-section {
             width: 80%;
             font-size: 200px;
@@ -70,6 +71,7 @@
             padding: 6px 50px;
             align-items: center;
             margin-left: 20px;
+            border-radius: 20px;
             color: white;
             width: 80%;
             font-weight: 600;
@@ -77,30 +79,18 @@
         }
 
         .flag-1 {
-            background-color: rgb(236, 53, 197);
+            background-color: black;
 
         }
 
         .flag-2 {
-            background-color: rgb(76, 147, 253);
+            background-color:white;
+            color: red;
         }
 
         .flag-3 {
-            background-color: rgb(212, 212, 120);
+            background-color: black;
         }
-
-        .flag-4 {
-            background-color: lime;
-        }
-
-        .flag-5 {
-            background-color: blueviolet;
-        }
-
-        .flag-6 {
-            background-color: orangered;
-        }
-
 
         .card-title {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -110,7 +100,9 @@
             font-size: 15px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-
+        .brr{
+            color: white;
+        }
         .card-profile-section {
             display: flex;
             justify-content: flex-start;
@@ -174,13 +166,13 @@
             <!-- card_1 -->
             <div class="card">
                 <div class="card-img-section">
-                    <span class="fa fa-globe"></span>
+                    <span class="fa bi-twitter"></span>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title">Lorem ipsum</h2>
+                    <h2 class="card-title">TWITTER</h2>
                     <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur <br>
-                        adipisicing elit. Sit officia qui repellendus.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ratione recusandae alias neque molestias sint ab.
                     </p>
                     <span class="card-flag flag-1">Read More</span>
                     <div class="card-profile-section">
@@ -192,15 +184,15 @@
 
 
             <!-- card_2 -->
-            <div class="card">
+            <div class="card extra">
                 <div class="card-img-section">
-                    <span class="fa fa-paper-plane"></span>
+                    <span class="fa bi-instagram"></span>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title">Lorem ipsum</h2>
-                    <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur <br>
-                        adipisicing elit. Sit officia qui repellendus.
+                    <h2 class="card-title brr">INSTAGRAM</h2>
+                    <p class="card-text brr">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                         Provident quae voluptatibus nulla similique earum iusto.
                     </p>
                     <span class="card-flag flag-2">Read More</span>
                 </div>
@@ -210,10 +202,10 @@
             <!-- card_3 -->
             <div class="card">
                 <div class="card-img-section">
-                    <span class="fa fa-headset"></span>
+                    <span class="fa bi-youtube"></span>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title">Lorem ipsum</h2>
+                    <h2 class="card-title">YOUTUBE</h2>
                     <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur <br>
                         adipisicing elit. Sit officia qui repellendus.
@@ -224,62 +216,5 @@
 
         </div>
 
-
-        <div class="child">
-            <!-- card_1 -->
-            <div class="card_1">
-                <div class="card-img-section">
-                    <span class="fa fa-desktop"></span>
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Lorem ipsum</h2>
-                    <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur <br>
-                        adipisicing elit. Sit officia qui repellendus.
-                    </p>
-                    <span class="card-flag flag-4">Read More</span>
-                    <div class="card-profile-section">
-
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- card_2 -->
-            <div class="card_1">
-                <div class="card-img-section">
-                    <span class="fa fa-bullhorn"></span>
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Lorem ipsum</h2>
-                    <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur <br>
-                        adipisicing elit. Sit officia qui repellendus.
-                    </p>
-                    <span class="card-flag flag-5">Read More</span>
-                </div>
-            </div>
-
-
-            <!-- card_3 -->
-            <div class="card_1">
-                <div class="card-img-section">
-                    <span class="fa fa-cogs"></span>
-                    <!-- <span class="bi bi-gear"></span> -->
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Lorem ipsum</h2>
-                    <p class="card-text">
-                        Lorem ipsum dolor, sit amet consectetur <br>
-                        adipisicing elit. Sit officia qui repellendus.
-                    </p>
-                    <span class="card-flag flag-6">Read More</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
 </body>
-
 </html>
