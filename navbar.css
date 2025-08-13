@@ -65,10 +65,9 @@
      align-items: center;
      gap: 2px;
 
-
  }
 
- .fa {
+.navbar .fa {
      font-size: 10px;
  }
 
