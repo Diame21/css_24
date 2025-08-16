@@ -4,81 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>Different Varieties Of Rice</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="navbar.css">
-    <style>
-        body {
-
-            font-family: 'Segoe UI', sans-serif;
-            background: url(uhyk.avif);
-            background-size: cover;
-
-
-        }
-
-        form {
-            background: rgba(34, 56, 56, 0.3);
-            border: 20px;
-            width: 330px;
-            padding: 40px 30px;
-            border-radius: 20px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-        }
-
-        label {
-            font-family: cursive;
-            font: 20px;
-            color: white;
-        }
-
-        h3 {
-
-            color: white;
-            text-align: center;
-
-        }
-
-        input[type="email"] {
-            padding: 5px 0;
-            width: 100%;
-            border: none;
-            background-color: transparent;
-            border-bottom: 2px solid white;
-
-        }
-
-        input[type="password"] {
-            padding: 5px 0;
-            width: 100%;
-            border: none;
-            background-color: transparent;
-            border-bottom: 2px solid white;
-
-        }
-
-        button {
-            background-color: white;
-            color: black;
-            border: none;
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            cursor: pointer;
-        }
-
-        h4 {
-            color: white;
-        }
-
-        .damn {
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
+
     <nav class="navbar">
         <div class="text">
             <h1>Victory's Assignment</h1>
@@ -98,7 +32,7 @@
                 <li>
                     <a href="talwind.html" class="nav-it">Tailwind</a>
                 </li>
-                
+
                 <li class="dropdown-list drop-toggle">
                     <a class="nav-it" href="">Board Games</a>
                     <i class="fa fa-chevron-down dropdown"></i>
@@ -189,28 +123,81 @@
     </nav>
 
     <!-- REAL CODE  -->
+    <h1 class="text-center text-5xl text-blue-700">DIFFERENT VARIETIES OF RICE</h1>
+    <div class="border-b border-gray-200 dark:border-gray-700 mt-9">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400" id="my-tab"
+            data-tabs-toggle="#my-tab-content" role="tablist">
+            <li class="me-2">
+                <button id="whiterice" data-tabs-target="#my-whiterice" role="tab" aria-selected="true"
+                    class="inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg group"
+                    aria-current="page">
+                    <div class="flex justify-start items-center mt-2 ">
+                        <img src="white rice.jpg" class="rounded-full w-[80px] h-[80px] border-4" alt="">White Rice
+                    </div>
+                </button>
+            </li>
+            <li class="me-2">
+                <button id="jollofrice" data-tabs-target="#my-jollofrice" role="tab" aria-selected="false"
+                    class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
+                    <div class="flex justify-start items-center mt-2 ">
+                        <img src="jollof rice.jpg" class="rounded-full w-[80px] h-[80px] border-4" alt="">Jollof Rice
+                    </div>
+                </button>
+            </li>
+            <li class="me-2">
+                <button id="friedrice" data-tabs-target="#my-friedrice" role="tab" aria-selected="true"
+                    class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
+                    <div class="flex justify-start items-center mt-2 ">
+                        <img src="fried rice.jpg" class="rounded-full w-[80px] h-[80px] border-4" alt="">Fried Rice
+                    </div>
+                </button>
+            </li>
+            <li class="me-2">
+                <button id="coconutrice" data-tabs-target="#my-coconutrice" role="tab" aria-selected="true"
+                    class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group">
+                    <div class="flex justify-start items-center mt-2 ">
+                        <img src="coconut rice.jpg" class="rounded-full w-[80px] h-[80px] border-4" alt="">Coconut Rice
+                    </div>
+                </button>
+            </li>
 
-    <form class="brr">
-        <h3><b>Login</b></h3>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required><br><br>
+        </ul>
+    </div>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required><br><br>
+    <!-- content tab  -->
+    <div id="my-tab-content">
+        <div class="flex justify-start items-center w-fit p-4 rounded-lg bg-gray-50 dark:bg-purple-800" id="my-whiterice" role="tabpanel"
+            aria-labelledby="white-tab">
+            <img class="h-[150px] max-w-xs" src="white rice.jpg" alt="image description">
+            <p class="text-xl text-white dark:text-white ml-4"><strong>White Rice:</strong> White rice is the most basic form <br>
+                of rice, typically made from milled,polished <br> grains. It has a mild flavor and is used as a <br> base for many dishes
+                or served as a simple side. </p>
+        </div>
+        <div class="flex justify-start items-center w-fit p-4 rounded-lg bg-gray-50 dark:bg-purple-800" id="my-jollofrice"
+            role="tabpanel" aria-labelledby="jollof-tab">
+            <img class="h-[150px] max-w-xs" src="jollof rice.jpg" alt="image description">
+            <p class="text-xl text-white dark:text-white ml-4"><strong>Jollof Rice:</strong> Jollof rice is a popular
+                West African dish, <br> particularly in Nigeria and Ghana, known for its vibrant <br> red color and rich,
+                savory flavor. It's made with rice cooked <br> in a spiced tomato and pepper-based sauce..</p>
+        </div>
+        <div class="flex justify-start items-center w-fit p-4 rounded-lg bg-gray-50 dark:bg-purple-800" id="my-friedrice" role="tabpanel"
+            aria-labelledby="fried-tab">
+            <img class="h-[150px] max-w-xs" src="fried rice.jpg" alt="image description">
+            <p class="text-xl text-white dark:text-white ml-4"><strong>Fried Rice:</strong> Fried rice is a dish where cooked <br>
+                rice is stir-fried in a wok with other ingredients <br> like vegetables, meat, and seasonings. It's known <br>for its
+                savory flavor and slightly sticky texture. </p>
+        </div>
+        <div class="flex justify-start items-center w-fit p-4 rounded-lg bg-gray-50 dark:bg-purple-800" id="my-coconutrice" role="tabpanel"
+            aria-labelledby="coconut-tab">
+            <img class="h-[150px] max-w-xs" src="coconut rice.jpg" alt="image description">
+            <p class="text-xl text-white dark:text-white ml-4"><strong>Coconut Rice:</strong> Coconut rice is made by cooking
+                rice <br> in coconut milk or coconut water, often with the <br> addition of other spices. It has a distinct creamy <br>
+                 texture and a subtle coconut flavor.
+            </p>
+        </div>
+    </div>
 
-        <input type="checkbox" name="remember me" style="justify-content: space-between;"><label>Remember me</label>
-        <b></b><label for="forget password"><a href="" class="damn">Forget Password</a></label></b>
-        <br><br>
-
-
-
-        <button><b>Log In</b></button>
-
-        <h4>Don't have an account <label for="Register"><a href="" class="damn">Register</a></label></h4>
-
-
-    </form>
-
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
