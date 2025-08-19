@@ -1,4 +1,7 @@
 body{
+    margin: o;
+    padding: 16px;
+    overflow: hidden;
     background-color: coral;
 }
 h2{
