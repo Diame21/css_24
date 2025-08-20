@@ -1,9 +1,7 @@
  body {
      margin: 0;
-     padding: 0;
+     padding: 16px;
      background-color: transparent;
-    
-
  }
 
 
@@ -18,7 +16,7 @@
 
  .navbar {
      display: flex;
-     justify-content: space-around;
+     justify-content: center;
      align-items: center;
      background-color: rgb(77, 39, 215);
      padding: 10px 40px;
@@ -59,6 +57,12 @@
      gap: 10px;
  }
 
+ ul {
+     width: fit-content;
+     padding: 20px;
+     list-style-type: disc;
+ }
+
  .nav-it {
      text-decoration: none;
      color: bisque;
@@ -87,15 +91,24 @@
 
  .drop-toggle:hover .list-drop {
      display: block;
-     margin-top: 90px;
+     margin-top: 60px;
  }
 
  a:hover {
      font-weight: 1000;
      text-decoration: none;
-     font-size: 20px;
+     color: black;
  }
 
  a {
      text-decoration: none;
+ }
+
+ a:active {
+     color: black;  
+ }
+
+ a:visited {
+     color: deeppink;
+     background-color: darkgray;
  }
