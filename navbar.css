@@ -24,7 +24,7 @@
      box-shadow: 0px 0px 40px rgb(104, 109, 173);
      margin-top: 5px;
      margin-bottom: 10px;
-     width: fit-content;
+     /* width: fit-content; */
  }
 
  .text {
@@ -57,10 +57,10 @@
      gap: 10px;
  }
 
- ul {
+.navbar ul {
      width: fit-content;
      padding: 20px;
-     list-style-type: disc;
+     list-style-type: none;
  }
 
  .nav-it {
@@ -108,7 +108,7 @@
      color: black;  
  }
 
- a:visited {
+.navbar a:visited {
      color: deeppink;
-     background-color: darkgray;
+     /* background-color: darkgray; */
  }
