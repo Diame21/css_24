@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table for animated film</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="output.css">
     <style>
         body {
             margin: 0;
-            padding: 16px;
-            overflow: hidden;
+            padding: 0;
+            overflow-x: hidden;
         }
 
+        .id{
+            padding: 16px;
+        }
         table {
             border-collapse: collapse;
             text-align: left;
@@ -35,242 +38,342 @@
         ul {
             width: fit-content;
             padding: 20px;
-            list-style-type: disc;
         }
 
         a:active {
             color: black;
             background-color: orange;
         }
-
-        a:visited {
-            color: deeppink;
-            background-color: darkgray;
-        }
     </style>
 </head>
 
 <body>
-    <div class="nav-container">
-        <nav class="navbar">
-            <div class="text">
-                <h1>Victory's Assignment</h1>
-            </div>
-            <div class="content">
+    <nav class="bg-black border-gray-200 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Victory's
+                    Assignment</span>
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Home</a>
+                    </li>
+                    <li>
+                        <a href="animation.html"
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Animation</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto ">Cards
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-gray-700">
+                            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="card_ass.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Card
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="card_ass2.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Card
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a href="card_ass3.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Card
+                                        3</a>
+                                </li>
+                                <li>
+                                    <a href="checkers.html"
+                                        class="block px-4 py-2 text-sm hover:bg-gray-600 text-white">Chess board</a>
+                                </li>
+                                <li>
+                                    <a href="checkers_2.html"
+                                        class="block px-4 py-2 text-sm hover:bg-gray-600 text-white">Ludo board</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarr"
+                            class="flex items-center justify-between w-full py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto ">Forms
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarr"
+                            class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-gray-700">
+                            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="form_1.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Forms
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="form_2.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Forms
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a href="form_3.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Forms
+                                        3</a>
+                                </li>
+                                <a href="form_4.html" class="block px-4 py-2 text-sm hover:bg-gray-600 text-white">Forms
+                                    4</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarx"
+                            class="flex items-center justify-between w-full py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto ">Icons
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarx"
+                            class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-gray-700">
+                            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="icon_1.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Icons
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="icon_2.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Icons
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a href="icon_3.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Icons
+                                        3</a>
+                                </li>
+                                <li>
+                                    <a href="icon_4.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Icons
+                                        4</a>
+                                </li>
+                                <li>
+                                    <a href="icon_5.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Icons
+                                        5</a>
+                                </li>
 
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html" class="nav-it">Home</a>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="assignment.html" class="nav-it">Mozilla</a>
-                    </li>
-                    <li>
-                        <a href="animation.html" class="nav-it">Animation</a>
-                    </li>
-                    <li>
-                        <a href="tailwind.html" class="nav-it">Tailwind</a>
-                    </li>
-
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href="">Board Games</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="checkers.html">Checkers</a></li>
-                            <li><a href="checkers_2.html">Ludo</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href=""> Card</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="card_ass.html">Card 1</a></li>
-                            <li><a href="card_ass2.html">Card 2</a></li>
-                            <li><a href="card_ass3.html">Card 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href="">Forms</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="form_1.html">Form 1</a></li>
-                            <li><a href="form_2.html">Form 2</a></li>
-                            <li><a href="form_3.html">Form 3</a></li>
-                            <li><a href="form_4.html">Form 4</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href="">Gradient</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="gradient_ass.html">Gradient 1</a></li>
-                            <li><a href="gradient_ass2.html">Gradient 2</a></li>
-                            <li><a href="gradient_ass3.html">Gradient 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href="">Icons</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="icon_1.html">Icons 1</a></li>
-                            <li><a href="icon_2.html">Icons 2</a></li>
-                            <li><a href="icon_3.html">Icons 3</a></li>
-                            <li><a href="icon_4.html">Icons 4</a></li>
-                            <li><a href="icon_5.html">Icons 5</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href="">Navbar</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="nav_1.html">Navbar 1</a></li>
-                            <li><a href="nav_2.html">Navbar 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href="">Page</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="page_ass.html">Pages 1</a></li>
-                            <li><a href="page_ass2.html">Pages 2</a></li>
-                            <li><a href="page_ass3.html">Pages 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href="">Practice</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="practice_1.html">Practice 1</a></li>
-                            <li><a href="practice_2.html">Practice 2</a></li>
-                            <li><a href="practice_3.html">Practice 3</a></li>
-                            <li><a href="practice_4.html">Practice 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-list drop-toggle">
-                        <a class="nav-it" href="">Table</a>
-                        <i class="fa fa-chevron-down dropdown"></i>
-                        <ul class="list-drop">
-                            <li><a href="table_1.html">Table 1</a></li>
-                            <li><a href="table_2.html">Table 2</a></li>
-                            <li><a href="table_3.html">Table 3</a></li>
-                            <li><a href="table_4.html">Table 4</a></li>
-                        </ul>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbars"
+                            class="flex items-center justify-between w-full py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto ">Others
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbars"
+                            class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-sm w-44 bg-gray-700">
+                            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="nav_1.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Navbar
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="nav_2.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Navbar
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a href="page_ass.html" class="block px-4 py-2 hover:bg-gray-600 text-white">Page
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="page_ass2.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Page 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page_ass3.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Page 3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="practice_1.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Practice 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="practice_2.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Practice 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="practice_3.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Practice 3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="practice_4.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Practice 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_1.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Table 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_2.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Table 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_3.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Table 3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_4.html"
+                                        class="block px-4 py-2 text-sm text-white hover:bg-gray-600">Table 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+
+
+
     <!-- REAL CODE  -->
+    <div class="id">
+        <h3>PART 2</h3>
+        <h4>Top 10 Grossing Animated Films of All Time </h4>
+        <table>
+            <thead>
+                <tr>
+                    <td>Film Title</td>
+                    <td>Released</td>
+                    <td>Studio</td>
+                    <td>Worldwide Gross</td>
+                    <td>Domestic Gross</td>
+                    <td>International Gross</td>
+                    <td>Budget</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Lion King(2019 remake)</td>
+                    <td>2019</td>
+                    <td>Disney</td>
+                    <td>$1,657,870,986</td>
+                    <td>$543,638,043</td>
+                    <td>$1,114,232,943</td>
+                    <td>$260,000,000</td>
+                </tr>
+                <tr style="background-color: rgb(228, 219, 219);">
+                    <td>Frozen ll</td>
+                    <td>2019</td>
+                    <td>Disney</td>
+                    <td>$1,450,026,933</td>
+                    <td>$477,373,578</td>
+                    <td>$972,653,355</td>
+                    <td>$150,000,000</td>
+                </tr>
+                <tr>
+                    <td>Frozen</td>
+                    <td>2013</td>
+                    <td>Disney</td>
+                    <td>$1,281,019,275</td>
+                    <td>$400,953,009</td>
+                    <td>$880,066,266</td>
+                    <td>$150,000,000</td>
+                </tr>
+                <tr style="background-color: rgb(228, 219, 219);">
+                    <td>Incredibles 2</td>
+                    <td>2018</td>
+                    <td>Disney Pixcar</td>
+                    <td>$1,243,089,244</td>
+                    <td>$336,045,770</td>
+                    <td>$634,507,500</td>
+                    <td>$200,000,000</td>
+                </tr>
+                <tr>
+                    <td>Minions</td>
+                    <td>2015</td>
+                    <td>Universal</td>
+                    <td>$1,159,444,662</td>
+                    <td>$434,038,008</td>
+                    <td>$823,398,892</td>
+                    <td>$74,000,000</td>
+                </tr>
+                <tr style="background-color: rgb(228, 219, 219);">
+                    <td>Toy Story 4</td>
+                    <td>2019</td>
+                    <td>Disney Piscar</td>
+                    <td>$1,073,394,593</td>
+                    <td>$415,004,880</td>
+                    <td>$639,356,585</td>
+                    <td>$200,000,000</td>
+                </tr>
+                <tr>
+                    <td>Toy story 3</td>
+                    <td>2010</td>
+                    <td>Disney Pixcar</td>
+                    <td>$1,066,970,811</td>
+                    <td>$264,624,300</td>
+                    <td>$651,965,931</td>
+                    <td>$200,000,000</td>
+                </tr>
+                <tr style="background-color: rgb(228, 219, 219);">
 
-    <h3>PART 2</h3>
-    <h4>Top 10 Grossing Animated Films of All Time </h4>
-    <table>
-        <thead>
-            <tr>
-                <td>Film Title</td>
-                <td>Released</td>
-                <td>Studio</td>
-                <td>Worldwide Gross</td>
-                <td>Domestic Gross</td>
-                <td>International Gross</td>
-                <td>Budget</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>The Lion King(2019 remake)</td>
-                <td>2019</td>
-                <td>Disney</td>
-                <td>$1,657,870,986</td>
-                <td>$543,638,043</td>
-                <td>$1,114,232,943</td>
-                <td>$260,000,000</td>
-            </tr>
-            <tr style="background-color: rgb(228, 219, 219);">
-                <td>Frozen ll</td>
-                <td>2019</td>
-                <td>Disney</td>
-                <td>$1,450,026,933</td>
-                <td>$477,373,578</td>
-                <td>$972,653,355</td>
-                <td>$150,000,000</td>
-            </tr>
-            <tr>
-                <td>Frozen</td>
-                <td>2013</td>
-                <td>Disney</td>
-                <td>$1,281,019,275</td>
-                <td>$400,953,009</td>
-                <td>$880,066,266</td>
-                <td>$150,000,000</td>
-            </tr>
-            <tr style="background-color: rgb(228, 219, 219);">
-                <td>Incredibles 2</td>
-                <td>2018</td>
-                <td>Disney Pixcar</td>
-                <td>$1,243,089,244</td>
-                <td>$336,045,770</td>
-                <td>$634,507,500</td>
-                <td>$200,000,000</td>
-            </tr>
-            <tr>
-                <td>Minions</td>
-                <td>2015</td>
-                <td>Universal</td>
-                <td>$1,159,444,662</td>
-                <td>$434,038,008</td>
-                <td>$823,398,892</td>
-                <td>$74,000,000</td>
-            </tr>
-            <tr style="background-color: rgb(228, 219, 219);">
-                <td>Toy Story 4</td>
-                <td>2019</td>
-                <td>Disney Piscar</td>
-                <td>$1,073,394,593</td>
-                <td>$415,004,880</td>
-                <td>$639,356,585</td>
-                <td>$200,000,000</td>
-            </tr>
-            <tr>
-                <td>Toy story 3</td>
-                <td>2010</td>
-                <td>Disney Pixcar</td>
-                <td>$1,066,970,811</td>
-                <td>$264,624,300</td>
-                <td>$651,965,931</td>
-                <td>$200,000,000</td>
-            </tr>
-            <tr style="background-color: rgb(228, 219, 219);">
+                    <td>Despicable Me 3</td>
+                    <td>2017</td>
+                    <td>Universal</td>
+                    <td>$1,034,800,131</td>
+                    <td>$608,581,744</td>
+                    <td>$770,175,831</td>
+                    <td>$80,000,000</td>
+                </tr>
+                <tr>
+                    <td>Finding Dory</td>
+                    <td>2016</td>
+                    <td>Disney Pixcar</td>
+                    <td>$1,028,570,942</td>
+                    <td>$486,295,561</td>
+                    <td>$542,275,381</td>
+                    <td>$175,000,000</td>
+                </tr>
+                <tr style="background-color: rgb(228, 219, 219);">
+                    <td>Zootopia</td>
+                    <td>2016</td>
+                    <td>2016</td>
+                    <td>$1,023,792,558</td>
+                    <td>$341,268,248</td>
+                    <td>$682,524,310</td>
+                    <td>$150,000,000</td>
+                </tr>
+        </table>
+        <h5 style="color: rgb(38, 48, 24);">Sources:Wikipedia & Box Office Mojo.Data is current as of March 31, 2021.
+        </h5>
 
-                <td>Despicable Me 3</td>
-                <td>2017</td>
-                <td>Universal</td>
-                <td>$1,034,800,131</td>
-                <td>$608,581,744</td>
-                <td>$770,175,831</td>
-                <td>$80,000,000</td>
-            </tr>
-            <tr>
-                <td>Finding Dory</td>
-                <td>2016</td>
-                <td>Disney Pixcar</td>
-                <td>$1,028,570,942</td>
-                <td>$486,295,561</td>
-                <td>$542,275,381</td>
-                <td>$175,000,000</td>
-            </tr>
-            <tr style="background-color: rgb(228, 219, 219);">
-                <td>Zootopia</td>
-                <td>2016</td>
-                <td>2016</td>
-                <td>$1,023,792,558</td>
-                <td>$341,268,248</td>
-                <td>$682,524,310</td>
-                <td>$150,000,000</td>
-            </tr>
-    </table>
-    <h5 style="color: rgb(38, 48, 24);">Sources:Wikipedia & Box Office Mojo.Data is current as of March 31, 2021.</h5>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>

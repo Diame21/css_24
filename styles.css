@@ -1,10 +1,13 @@
 body{
     margin: o;
-    padding: 16px;
+    padding: 0;
     overflow: hidden;
     background-color: coral;
 }
 h2{
     font-size: 16px;
     color:green;
+}
+.id{
+    padding: 16px;
 }
