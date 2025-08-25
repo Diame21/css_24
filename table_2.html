@@ -35,14 +35,16 @@
             border: 2px solid greenyellow;
         }
 
-        ul {
-            width: fit-content;
-            padding: 20px;
-        }
-
         a:active {
             color: black;
             background-color: orange;
+        }
+        
+        @media(max-width: 768px) {
+            .content {
+                flex-direction: column;
+                display: none;
+            }
         }
     </style>
 </head>

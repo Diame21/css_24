@@ -90,3 +90,15 @@ body {
 .profile-name {
     font-weight: 700;
 }
+@media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .parent,
+            .child {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+        }

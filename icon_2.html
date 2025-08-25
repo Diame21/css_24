@@ -13,7 +13,7 @@
         body {
             padding: 0;
             margin: 0;
-            overflow: hidden;
+            overflow-x: hidden;
             font-family: Arial, Helvetica, sans-serif;
             background-image: url(gdp.jpg);
             background-size: cover;
@@ -86,12 +86,11 @@
             padding: 10px;
             margin-right: 10px;
             cursor: pointer;
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
-        .content {
-            display: flex;
-            width: 100%;
+        .content-text p {
+           margin-top: 10px;
 
         }
 
@@ -160,8 +159,14 @@
             color: white;
         }
 
-        .damn {
-            color: white;
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .content, .boxes {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -427,4 +432,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
+
 </html>
