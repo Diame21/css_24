@@ -97,6 +97,7 @@ body {
 
             .parent,
             .child {
+                width: fit-content;
                 flex-direction: column;
                 gap: 40px;
             }
